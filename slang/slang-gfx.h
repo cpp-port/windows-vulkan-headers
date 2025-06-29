@@ -734,7 +734,7 @@ struct SubresourceRange
     GfxIndex mipLevel;
     GfxCount mipLevelCount;
     GfxIndex baseArrayLayer; // For Texture3D, this is WSlice.
-    GfxCount layerCount;     // For graphics3d maps, this is a multiple of 6.
+    GfxCount layerCount;     // For cube maps, this is a multiple of 6.
 };
 
 class ITextureResource : public IResource
@@ -2326,7 +2326,7 @@ struct DeviceLimits
     uint32_t maxTextureDimension2D;
     /// Maximum dimensions for 3D textures.
     uint32_t maxTextureDimension3D;
-    /// Maximum dimensions for graphics3d textures.
+    /// Maximum dimensions for cube textures.
     uint32_t maxTextureDimensionCube;
     /// Maximum number of texture layers.
     uint32_t maxTextureArrayLayers;

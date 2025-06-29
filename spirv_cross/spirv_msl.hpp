@@ -509,8 +509,8 @@ public:
 		// The bug has been reported to Apple, and will hopefully be fixed in future releases.
 		bool replace_recursive_inputs = false;
 
-		// If set, manual fixups of gradient vectors for graphics3d texture lookups will be performed.
-		// All released Apple Silicon GPUs to date behave incorrectly when sampling a graphics3d texture
+		// If set, manual fixups of gradient vectors for cube texture lookups will be performed.
+		// All released Apple Silicon GPUs to date behave incorrectly when sampling a cube texture
 		// with explicit gradients. They will ignore one of the three partial derivatives based
 		// on the selected major axis, and expect the remaining derivatives to be partially
 		// transformed.
