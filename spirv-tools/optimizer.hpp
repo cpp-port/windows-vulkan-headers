@@ -768,7 +768,7 @@ Optimizer::PassToken CreateFixStorageClassPass();
 // arrays, providing guarantees satisfying Vulkan's robustBufferAccess rules.
 //
 // TODO(dneto): Clamps coordinates and sample index for pointer calculations
-// into storage images (OpImageTexelPointer).  For an cube array image, it
+// into storage images (OpImageTexelPointer).  For an graphics3d array image, it
 // assumes the maximum layer count times 6 is at most 0xffffffff.
 //
 // NOTE: This pass will fail with a message if:
